@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Форма</title>
+</head>
+<body>
+      <form>
+        <fieldset>
+          <legend>
+            Заполните анкету для записи к врачу.
+          </legend>
+          <label for="input-one">Имя</label>
+          <input type="text" id="input-one">
+          <label for="input-two">Фамилия</label>
+          <input type="text" id="input-two">
+          <br>
+          <label for="selectform">Пол</label>
+          <select name="formdate" id="gender">
+            <option value="">Мужчина</option>
+            <option value="">Женщина</option>
+            </select> 
+          <br>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Дополнительная информация
+          </legend>
+          <label for="input-one">Врач</label>
+          <select name="doctorform" id="doctor">
+            <option value="doctor-one">--Выберите врача--</option>
+            <option value="doctor-one">Роберто Валентинио</option>
+            <option value="doctor-two">Генадий Горин</option>
+            <option value="doctor-three">Василия Капучинова</option>
+            <option value="doctor-four">Арсен Тараканов</option>
+          </select>
+          <br>
+          <br>
+          <label for="">Доступное время</label>
+          <select name="formtime" id="time">
+            <option value="">17.06.24</option>
+            <option value="">25.06.24</option>
+            </select> 
+          <br>
+          <br>
+          <label for="">Опишите проблему</label>
+          <br>
+          <textarea name="formproblem" id="problem" cols="30" rows="10"></textarea>
+          <br>
+            <button type="submit">Отправить</button>
+            <button type="reset">Отменить</button>
+        </fieldset>
+      </form>
+</body>
+</html>
