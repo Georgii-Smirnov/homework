@@ -1,0 +1,74 @@
+body {
+  background-color: #000000f3;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+.wrapper {
+  padding: 55px;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 38px;
+}
+
+.review-title:hover {
+  box-shadow: 0 0 35px 9px #33c44b;
+  height: 250px;
+}
+
+.review-title {
+  width: 900px;
+  height: 200px;
+  border-radius: 14px;
+  background-color:#e5e7f0;
+  font-size: 20px;
+}
+
+
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.button__link-sumbit{
+  background-color: #c7c7c7;
+  border-radius: 2em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: inherit;
+  margin: 50px 0px;
+  width: 45%;
+}
+
+.button__link-sumbit:active{
+  background-color: #138b25;;
+} 
+
+.button__link-reset {
+  background-color: #c7c7c7;
+  border-radius: 2em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: inherit;
+  margin: 50px 0px;
+  width: 45%;
+}
+
+.button__link-reset:hover {
+  box-shadow: 0 0 25px 20px #cc2323;
+}
+
