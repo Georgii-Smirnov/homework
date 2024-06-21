@@ -1,0 +1,30 @@
+body {
+  background: #d66666;
+}
+
+.text {
+  font-family: serif;
+  font-size: 32px;
+}
+
+.rectangle {
+  background-color: blueviolet;
+  height: 100px;
+  border-radius: 10px;
+
+  position: fixed;
+  left: 50%;
+  right:50px;
+  bottom: 100px;
+}
+
+.circle {
+  background-color: bisque;
+  border-radius: 55px;
+  height: 100px;
+  width: 100px;
+
+  position: relative;
+  left: 75px;
+  bottom: 55px;
+}
