@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+}
+
+.body--fixed {
+  overflow-y: hidden;
+}
+
+.btn-open {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.btn-open:hover {
+  background-color: #666;
+}
+
+.btn-open:active {
+  background-color: #64be28;
+}
+
+.modal {
+  position: fixed;
+  /* Растягиваем подложку на весь VH */
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000e8;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__window {
+  position: relative;
+  width: 50vw;
+  min-height: 40vh;
+  padding: 50px 20px 20px 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 15px rgb(255, 255, 255);
+  border-radius: 12px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
