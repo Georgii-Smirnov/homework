@@ -7,6 +7,7 @@
   <title>rise creative</title>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -49,10 +50,10 @@
               </ul>
             </nav>
             <div class="header__control">
-              <a class="header__button button--primary" href="#">
+              <a class="header__button button--primary" id="openModalBtn-in" href="#">
                 Sign in
               </a>
-              <a class="header__button button--secondary" href="#">
+              <a class="header__button button--secondary" id="openModalBtn" href="#">
                 Sign up
               </a>
             </div>
@@ -212,7 +213,6 @@
         </div>
       </section>
     </header>
-
     <main class="main">
       <section class="main__about about">
         <div class="container">
@@ -312,11 +312,310 @@
         </div>
       </section>
 
-    </main>
+      <section class="main__table-services table-services">
+        <div class="container">
+          <div class="table-services__inner">
+            <div class="table-services__content">
+              <p class="table-services__preface preface">
+                our searvices
+              </p>
+              <h3 class="table-services__title title">
+                What Creative Design
+                <br>
+                We Offer
+              </h3>
+              <p class="table-services__text">
+                Business owners and managers lead by example. The values and work ethic displayed by a company's
+                decision makers have a direct
+                <br>
+                ...
+              </p>
+            </div>
+            <ul class="vacancy-grid">
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/block-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Product Management</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/web-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Web & Mobile Development</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/map-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Brochures & Flyers</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/cards-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Logo & name cards</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/roi-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Marketing & Communication</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/biz-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Business Development</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/res-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Human Resources</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+              <li class="vacancy-grid__item">
+                <div class="vacancy-grid__item-img">
+                  <img src="img/icons/section-icons/laptop-icon.svg" alt="">
+                </div>
+                <h3 class="vacancy-grid__title">Infographics & Illustrations</h3>
+                <p class="vacancy-grid__subtitle">vacancy available 20</p>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+      </section>
+
+      <section class="main__content-gallery content-gallery">
+        <div class="container">
+          <div class="content-gallery__inner">
+            <div class="content-gallery__info">
+              <p class="content-gallery__preface preface">
+                Ready To Use
+              </p>
+              <h3 class="content-gallery__title title">
+                Elegant And
+                Impressive Inner Pages
+              </h3>
+            </div>
+            <div class="content-gallery__nav">
+              <button class="content-gallery__prev" type="button" tabindex="0" aria-label="Next slide"
+                aria-controls="swiper-wrapper-9c24f22b83c9cc25" aria-disabled="false">
+                <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 17L1 9L9 1" stroke="#828282" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M17 9H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </button>
+              <button class="content-gallery__next" type="button" tabindex="0" aria-label="Next slide"
+                aria-controls="swiper-wrapper-9c24f22b83c9cc25" aria-disabled="false">
+                <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.00012 1.00003L17.0001 9.00003L9.00012 17" stroke="#828282" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1.00012 9.00003H17.0001" stroke="#828282" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="content-gallery__slider swiper-container">
+            <div class="content-gallery__wrapper swiper-wrapper">
+              <div class="swiper-slide content-gallery__slide">
+                <img src="img/section-img/main-img/gallery-slide-1.png" alt="">
+                <h4 class="content-gallery__slide-title">
+                  Hotel Booking Website
+                </h4>
+                <p class="content-gallery__slide-text">
+                  Business owners and managers lead by example.
+                  The values and work ethic displayed by a
+                </p>
+
+                <div class="content-gallery__slide-link">
+                  <a class="content-gallery__slide-item title" href="#">
+                    Read Case Study
+                  </a>
+                  <svg width="15" height="10" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 8.00003C0 7.77272 0.0903001 7.55471 0.251035 7.39398C0.41177 7.23324 0.629774 7.14294 0.857088 7.14294H21.0724L15.6779 1.75015C15.5169 1.58921 15.4265 1.37093 15.4265 1.14333C15.4265 0.915726 15.5169 0.697447 15.6779 0.536508C15.8388 0.37557 16.0571 0.285156 16.2847 0.285156C16.5123 0.285156 16.7306 0.37557 16.8915 0.536508L23.7482 7.39321C23.828 7.47283 23.8913 7.56741 23.9346 7.67154C23.9778 7.77567 24 7.88729 24 8.00003C24 8.11277 23.9778 8.2244 23.9346 8.32852C23.8913 8.43265 23.828 8.52723 23.7482 8.60685L16.8915 15.4636C16.7306 15.6245 16.5123 15.7149 16.2847 15.7149C16.0571 15.7149 15.8388 15.6245 15.6779 15.4636C15.5169 15.3026 15.4265 15.0843 15.4265 14.8567C15.4265 14.6291 15.5169 14.4109 15.6779 14.2499L21.0724 8.85712H0.857088C0.629774 8.85712 0.41177 8.76682 0.251035 8.60608C0.0903001 8.44535 0 8.22734 0 8.00003Z"
+                      fill="#24272E" />
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide content-gallery__slide">
+                <img src="img/section-img/main-img/gallery-slide-2.png" alt="">
+                <h4 class="content-gallery__slide-title">
+                  UI/UX⠀App Design
+                </h4>
+                <p class="content-gallery__slide-text">
+                  Business owners and managers lead by example.
+                  The values and work ethic displayed by a
+                </p>
+                <div class="content-gallery__slide-link">
+                  <a class="content-gallery__slide-item title" href="#">
+                    Read Case Study
+                  </a>
+                  <svg width="15" height="10" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 8.00003C0 7.77272 0.0903001 7.55471 0.251035 7.39398C0.41177 7.23324 0.629774 7.14294 0.857088 7.14294H21.0724L15.6779 1.75015C15.5169 1.58921 15.4265 1.37093 15.4265 1.14333C15.4265 0.915726 15.5169 0.697447 15.6779 0.536508C15.8388 0.37557 16.0571 0.285156 16.2847 0.285156C16.5123 0.285156 16.7306 0.37557 16.8915 0.536508L23.7482 7.39321C23.828 7.47283 23.8913 7.56741 23.9346 7.67154C23.9778 7.77567 24 7.88729 24 8.00003C24 8.11277 23.9778 8.2244 23.9346 8.32852C23.8913 8.43265 23.828 8.52723 23.7482 8.60685L16.8915 15.4636C16.7306 15.6245 16.5123 15.7149 16.2847 15.7149C16.0571 15.7149 15.8388 15.6245 15.6779 15.4636C15.5169 15.3026 15.4265 15.0843 15.4265 14.8567C15.4265 14.6291 15.5169 14.4109 15.6779 14.2499L21.0724 8.85712H0.857088C0.629774 8.85712 0.41177 8.76682 0.251035 8.60608C0.0903001 8.44535 0 8.22734 0 8.00003Z"
+                      fill="#24272E" />
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide content-gallery__slide">
+                <img src="img/section-img/main-img/gallery-slide-3.png" alt="">
+                <h4 class="content-gallery__slide-title">
+                  Ceramic E-commerce Landing Page
+                </h4>
+                <p class="content-gallery__slide-text">
+                  Business owners and managers lead by example.
+                  The values and work ethic displayed by a
+                </p>
+                <div class="content-gallery__slide-link">
+                  <a class="content-gallery__slide-item title" href="#">
+                    Read Case Study
+                  </a>
+                  <svg width="15" height="10" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 8.00003C0 7.77272 0.0903001 7.55471 0.251035 7.39398C0.41177 7.23324 0.629774 7.14294 0.857088 7.14294H21.0724L15.6779 1.75015C15.5169 1.58921 15.4265 1.37093 15.4265 1.14333C15.4265 0.915726 15.5169 0.697447 15.6779 0.536508C15.8388 0.37557 16.0571 0.285156 16.2847 0.285156C16.5123 0.285156 16.7306 0.37557 16.8915 0.536508L23.7482 7.39321C23.828 7.47283 23.8913 7.56741 23.9346 7.67154C23.9778 7.77567 24 7.88729 24 8.00003C24 8.11277 23.9778 8.2244 23.9346 8.32852C23.8913 8.43265 23.828 8.52723 23.7482 8.60685L16.8915 15.4636C16.7306 15.6245 16.5123 15.7149 16.2847 15.7149C16.0571 15.7149 15.8388 15.6245 15.6779 15.4636C15.5169 15.3026 15.4265 15.0843 15.4265 14.8567C15.4265 14.6291 15.5169 14.4109 15.6779 14.2499L21.0724 8.85712H0.857088C0.629774 8.85712 0.41177 8.76682 0.251035 8.60608C0.0903001 8.44535 0 8.22734 0 8.00003Z"
+                      fill="#24272E" />
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+  </main>
+  </div>
+  </div>
+
+
+
+  <div class="modal__in" id="modal1">
+    <div class="modal__window">
+      <a class="modal__close-btn" href="#">
+        <svg fill="#000000" height="20px" width="20px" viewBox="0 0 512 512">
+          <polygon
+            points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 512,452.922 315.076,256" />
+        </svg>
+      </a>
+      <h3 class="modal__text-title">Sign Up</h3>
+      <p class="modal__text-subtitle">Sign up now and start your journey with us!</p>
+      <form class="modal__form">
+        <label class="modal__form-label field">
+          <div class="input-container">
+            <input type="text" class="modal__form-input field__input" placeholder="E-mail" required id="emailInput1">
+            <span>Your Email</span>
+          </div>
+        </label>
+        <label class="modal__form-label field">
+          <div class="modal__form-container input-container">
+            <input type="password" class="modal__form-input field__input" placeholder="Password" required
+              id="passwordInput1">
+            <span>Your Password</span>
+            <button type="button" class="password-toggle">
+              <img src="img/icons/eye-icon1.png" alt="Show password" width="20" height="20">
+            </button>
+          </div>
+        </label>
+        <label class="modal__form-label field">
+          <div class="modal__form-container input-container">
+            <input type="password" class="modal__form-input field__input" placeholder="Repeat Password" required
+              id="passwordInput2">
+            <span>Repeat your password</span>
+            <button type="button" class="password-toggle">
+              <img src="img/icons/eye-icon1.png" alt="Show password" width="20" height="20">
+            </button>
+          </div>
+        </label>
+        <p class="modal__form-eror-message error-message" id="errorMessage">
+          Passwords do not match
+        </p>
+
+        <button type="submit" class="modal__form-button button--secondary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal__in" id="modal2">
+    <div class="modal__window">
+      <a class="modal__close-btn" href="#">
+        <svg fill="#000000" height="20px" width="20px" viewBox="0 0 512 512">
+          <polygon
+            points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 512,452.922 315.076,256" />
+        </svg>
+      </a>
+      <h3 class="modal__text-title">Sign In</h3>
+      <p class="modal__text-subtitle">Please enter your credentials to access ;)</p>
+      <form class="modal__form">
+        <label class="modal__form-label field">
+          <div class="modal__form-container input-container">
+            <input type="text" class="modal__form-input field__input" placeholder="E-mail" required id="emailInput2">
+            <span>Your Email</span>
+          </div>
+        </label>
+        <label class="modal__form-label field">
+          <div class="modal__form-container input-container">
+            <input type="password" class="modal__form-input field__input" placeholder="Password" required
+              id="passwordInput3">
+            <span>Your Password</span>
+            <button type="button" class="password-toggle">
+              <img src="img/icons/eye-icon1.png" alt="Show password" width="20" height="20">
+            </button>
+          </div>
+        </label>
+        <button type="submit" class="modal__form-button button--secondary">Sign In</button>
+      </form>
+    </div>
   </div>
   <script src="js/fslightbox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
 </html>
+
+<!-- <div class="modal__in" id="modal1">
+  <div class="modal__window">
+    <a class="modal__close-btn" href="#">
+      <svg fill="#000000" height="20px" width="20px" viewBox="0 0 512 512">
+        <polygon
+          points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 512,452.922 315.076,256" />
+      </svg>
+    </a>
+    <h3 class="modal__text-title">Sign Up</h3>
+    <p class="modal__text-subtitle">After registration you will be <br>given access to your personal account</p>
+    <form class="modal__form">
+      <label class="modal__form-label field">
+        <input type="text" class="modal__form-input field__input" placeholder="E-mail" required>
+        <span>Your Email</span>
+      </label>
+      <label class="modal__form-label field">
+        <input type="password" class="modal__form-input field__input" placeholder="Password" required
+          id="passwordInput">
+        <span>Your Password</span>
+        <button type="button" class="modal__password-toggle password-toggle" aria-label="Show Password"></button>
+      </label>
+      <label class="modal__form-label field">
+        <input type="password" class="modal__form-input field__input" placeholder="Password" required
+          id="passwordInput">
+        <span>Your Password</span>
+        <button type="button" class="modal__password-toggle password-toggle" aria-label="Show Password"></button>
+      </label>
+      <p class="modal__form-eror-message error-message" id="errorMessage">
+        Passwords do not match
+      </p>
+      <button type="submit" class="modal__form-button button--secondary">Sign Up</button>
+    </form>
+  </div>
+</div> -->
