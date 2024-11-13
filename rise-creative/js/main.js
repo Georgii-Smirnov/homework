@@ -86,6 +86,26 @@
     },
   });
 
+  new Swiper('.testimonials__slider', {
+    spaceBetween: 30,
+    slidesPerView: 2,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      901: {
+        slidesPerView: 1.5,
+      },
+
+      1201: {
+        slidesPerView: 2.1,
+      },
+    }
+  });
+
+
 })();
 
 

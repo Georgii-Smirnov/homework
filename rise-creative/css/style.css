@@ -840,6 +840,10 @@ body {
 
 /* ------------------------------------------------------ */
 
+.main__content-gallery {
+  margin-bottom: 140px;
+}
+
 .content-gallery__nav {
   display: flex;
   gap: 16px;
@@ -951,6 +955,69 @@ body {
   word-break: break-word;
   /* Чтобы длинные слова переносились */
 }
+
+/* ------------------------------------------------------ */
+
+.main__testimonials {
+  padding-bottom: 140px;
+}
+
+.testimonials__slide {
+  padding: 32px 60px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 568px;
+
+  overflow: hidden;
+  height: auto;
+}
+
+.swiper-slide-active.testimonials__slide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.testimonials__inner {
+  margin-bottom: 80px;
+}
+
+.testimonials__info {
+  text-align: center;
+
+}
+
+.testimonials__student-name {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.testimonials__student-quote {
+  font-size: 13px;
+}
+
+.testimonials__student-rating {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}
+
+.testimonials__student-img {
+  padding-bottom: 10px;
+}
+
+
+.testimonials__quote {
+  font-size: 20px;
+  line-height: 187%;
+  max-width: 409px;
+}
+
+.testimonials__pagination {
+  position: absolute;
+  bottom: -5px;
+}
+
 
 /* ------------------------------------------------------ */
 
@@ -1148,6 +1215,16 @@ body {
     font-size: 17px;
   }
 
+  /* ------------------------------------------------- */
+
+  .table-services__content {
+    padding: 0px 67px 52px;
+  }
+
+  .main__table-services {
+    padding-bottom: 120px;
+  }
+
   /* ----------------------------------------- */
 
   .content-gallery__slide-title {
@@ -1158,7 +1235,11 @@ body {
 @media (max-width: 800px) {
 
   .main__about {
-    padding: 110px 0px;
+    padding: 120px 0px;
+  }
+
+  .main__table-services {
+    padding-bottom: 120px;
   }
 
   /* ------------------------------------------ */
@@ -1205,8 +1286,7 @@ body {
   }
 
   .services__title {
-    max-width: 400px;
-    font-size: 3.8vw;
+    font-size: 32px;
   }
 
   .services__img {
@@ -1228,8 +1308,9 @@ body {
     display: block;
   }
 
-  .table-services__content {
-    padding: 0px 0px 80px;
+
+  .table-services__title {
+    font-size: 35px;
   }
 
   .table-services__text {
@@ -1240,23 +1321,56 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .vacancy-grid__title {
+    font-size: 18px;
+  }
+
   /* --------------------------------------- */
 
   .content-gallery__slide img {
     height: 420px;
   }
 
-  .title {
-    font-size: 40px;
+  .content-gallery__title {
+    font-size: 35px;
+    max-width: 405px;
+  }
+
+  .content-gallery__info {
+    padding-bottom: 20px;
+  }
+
+  /* -------------------------------------------- */
+
+  .about__title {
+    font-size: 32px;
   }
 
   .preface {
     font-size: 14px;
   }
 
+  /* -------------------------------------------- */
+
+  .content__about {
+    gap: 18px;
+    align-items: stretch;
+  }
+
 }
 
 @media (max-width: 600px) {
+
+  .header__button {
+    padding: 13px 28px 15px 28px;
+  }
+
+  .header__control {
+    gap: 15px;
+  }
+
+  /* ------------------------------------------ */
+
   .modal__text-subtitle {
     font-size: 18px;
     text-align: center;
@@ -1274,14 +1388,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .about__title {
-    font-size: 25px;
-  }
-
-  .services__title {
-    font-size: 24px;
-  }
-
   .services__img-mask,
   .about__img-mask {
     display: none;
@@ -1292,12 +1398,9 @@ body {
     font-size: 14px;
   }
 
-  .services__item-title {
-    font-size: 17px;
-  }
 
   .table-services__title {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .main__services {
@@ -1306,10 +1409,6 @@ body {
 
   .vacancy-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .vacancy-grid__title {
-    font-size: 18px;
   }
 
   .vacancy-grid__item p {
@@ -1356,9 +1455,15 @@ body {
     padding-bottom: 15px;
   }
 
+  .content-gallery__title {
+    font-size: 32px;
+    max-width: 465px;
+  }
+
 }
 
 @media (max-width: 450px) {
+
 
   .field__input {
     font-size: 17px;
@@ -1369,7 +1474,7 @@ body {
   }
 
   .header__button {
-    padding: 3px 13px 6px 12px;
+    padding: 3px 10px 6px 10px;
   }
 
   .hero__text-title {
@@ -1418,6 +1523,10 @@ body {
     gap: 35px;
   }
 
+  .header__control {
+    gap: 9px;
+  }
+
   /* ------------------------------------- */
 
   .about__title {
@@ -1430,6 +1539,14 @@ body {
 
   .services__img img {
     width: 100%;
+  }
+
+  .services__item-img img {
+    padding: 13px;
+  }
+
+  .services__title {
+    font-size: 24px;
   }
 
   .table-services__title {
@@ -1459,6 +1576,10 @@ body {
 
   .table-services__content {
     padding: 0px 0px 45px;
+  }
+
+  .table-services__title {
+    font-size: 29px;
   }
 
   /* ---------------------------- */
