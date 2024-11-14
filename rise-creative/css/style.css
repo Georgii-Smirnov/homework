@@ -958,24 +958,38 @@ body {
 
 /* ------------------------------------------------------ */
 
+
 .main__testimonials {
   padding-bottom: 140px;
 }
 
-.testimonials__slide {
-  padding: 32px 60px;
+.testimonials__student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.testimonials__slide {
   background: #fff;
   border-radius: 10px;
-  max-width: 568px;
-
   overflow: hidden;
-  height: auto;
+  transition: var(--transition);
+  padding: 32px 60px 32px 60px;
+}
+
+.testimonials__slide.swiper-slide {
+  transform: scale(.9);
+  opacity: 0.5;
+
+  transform: translateY(42px);
+
 }
 
 .swiper-slide-active.testimonials__slide {
   transform: scale(1);
   opacity: 1;
+
 }
 
 .testimonials__inner {
@@ -984,7 +998,6 @@ body {
 
 .testimonials__info {
   text-align: center;
-
 }
 
 .testimonials__student-name {
@@ -997,27 +1010,47 @@ body {
 }
 
 .testimonials__student-rating {
-  display: flex;
-  gap: 2px;
-  justify-content: center;
+display: flex;
 }
 
 .testimonials__student-img {
   padding-bottom: 10px;
 }
 
-
 .testimonials__quote {
+  font-size: 16px;
+  line-height: 150%;
+  transition: var(--transition);
+  padding-left: 18px;
+  max-width: 438px;
+  text-align: center;
+}
+
+.swiper-slide-active .testimonials__quote {
   font-size: 20px;
-  line-height: 187%;
-  max-width: 409px;
 }
 
-.testimonials__pagination {
-  position: absolute;
-  bottom: -5px;
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -14%;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.testimonials__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--color-primary-main);
+  width: 20px;
+  height: 20px;
+
+  transition: all .9s;
+}
+
+.testimonials__pagination .swiper-pagination-bullet {
+  background: #504f4f;
+  width: 16px;
+  height: 16px;
+}
 
 /* ------------------------------------------------------ */
 
@@ -1474,7 +1507,7 @@ body {
   }
 
   .header__button {
-    padding: 3px 10px 6px 10px;
+    padding: 1px 10px 1px 10px;
   }
 
   .hero__text-title {
