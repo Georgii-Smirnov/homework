@@ -87,21 +87,31 @@
   });
 
   new Swiper('.testimonials__slider', {
-    spaceBetween: 0,
+    spaceBetween: 30,
     centeredSlides: true,
-    slidesPerView: 2.2221,
+    slidesPerView: 2.36,
 
-  
+
     pagination: {
       el: '.testimonials__pagination',
       clickable: true,
     },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
+    breakpoints: {
+      900: {
+        slidesPerView: 2.36,
+        spaceBetween: 30,
+      },
+
+      601: {
+        slidesPerView: 1.9,
+        spaceBetween: 30,
+      },
+
+      350: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+    }
   });
 
 
