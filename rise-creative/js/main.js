@@ -115,6 +115,43 @@
   });
 
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.accordions__item');
+
+    accordions.forEach(el => {
+      el.addEventListener('click', (e) => {
+        const self = e.currentTarget;
+        const control = self.querySelector('.accordions__control');
+        const content = self.querySelector('.accordions__content');
+
+        accordions.forEach(otherEl => {
+          if (otherEl !== self && otherEl.classList.contains('open')) {
+            const otherControl = otherEl.querySelector('.accordions__control');
+            const otherContent = otherEl.querySelector('.accordions__content');
+
+            otherEl.classList.remove('open');
+            otherControl.setAttribute('aria-expanded', false);
+            otherContent.setAttribute('aria-hidden', true);
+            otherContent.style.maxHeight = null;
+          }
+        });
+
+        self.classList.toggle('open');
+
+        if (self.classList.contains('open')) {
+          control.setAttribute('aria-expanded', true);
+          content.setAttribute('aria-hidden', false);
+          content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+          control.setAttribute('aria-expanded', false);
+          content.setAttribute('aria-hidden', true);
+          content.style.maxHeight = null;
+        }
+      });
+    });
+  });
+
+
 })();
 
 

@@ -960,11 +960,12 @@ body {
 
 
 .main__testimonials {
-  padding-bottom: 250px;
+  padding-bottom: 140px;
 }
 
 .testimonials__wrapper {
   align-items: center;
+  padding-bottom: 80px;
 }
 
 .testimonials__student {
@@ -1079,7 +1080,6 @@ body {
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -14%;
   gap: 8px;
   display: flex;
   justify-content: center;
@@ -1103,8 +1103,17 @@ body {
 
 /* ------------------------------------------------------ */
 
+.main__process {
+  padding-bottom: 140px;
+}
+
+.process__title {
+  flex-shrink: 0;
+}
+
 .process__intro {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .accordions__list {
@@ -1114,12 +1123,14 @@ body {
 }
 
 .accordions__item {
-  background-color: #f3f3f3;
-  border-radius: 2.8rem;
+  background-color: var(--color-primary-main);
+  border-radius: 0.8rem;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
-  box-shadow: 0px 0.3125rem 0px 0px var(--action-color-label);
   border: 0.0625rem solid #191a2343;
+
+  border-color: var(--action-color-label);
+  border-width: 4px;
 }
 
 .accordions__control {
@@ -1128,25 +1139,132 @@ body {
   padding: 40px 60px;
   width: 100%;
   position: relative;
+  gap: 20px;
+
+  background-color: var(--color-primary-main);
 }
 
-.accordions__title,
 .accordions__number {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
   font-weight: 500;
   font-size: 28px;
   line-height: 82%;
   display: flex;
+
+  color: #F5F5F5;
 }
 
 .accordions__title {
-  padding-left: 40px;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  flex: 1 1 auto;
+  display: flex;
+  line-height: 120%;
+  padding-right: 1.25rem;
+  justify-content: flex-start;
+  text-align: left;
+
+  color: #F5F5F5;
 }
 
 .accordions__number {
   font-size: 45px;
 }
 
+.accordions__icon {
+  flex: 0 0 58px;
+  display: flex;
+  width: 58px;
+  height: 58px;
+  background-color: #f3f3f3;
+  border: 1px solid #191a23;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+}
+
+.accordions__icon::before {
+  content: "";
+  width: 1.5625rem;
+  height: 0.3125rem;
+  background-color: #191a23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordions__icon::after {
+  content: "";
+  width: 1.5625rem;
+  height: 0.3125rem;
+  background-color: #191a23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+.accordions__content {
+  padding: 0 60px 0 60px;
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+  box-sizing: content-box;
+  position: relative;
+  z-index: 5;
+}
+
+.open .accordions__content {
+  padding: 20px 60px 40px 60px;
+  color: #fff;
+}
+
+.open .accordions__icon {
+  transform: rotate(225deg);
+  background: var(--action-color-label)
+}
+
+/* ----------------------------------------- */
+
+.contact__content {
+  display: flex;
+}
+
+.contact__content-left {
+  width: 620px;
+}
+.contact__content-right {
+  max-width: 616px;
+}
+.contact__info-title {
+  max-width: 510px;
+  font-size: 34px;
+  padding-bottom: 16px;
+}
+
+.contact__info-text {
+  max-width: 479px;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  padding-bottom: 24px;
+}
+
+.contact__item {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+
+.contact__list-text {
+  font-size: 14px;
+}
+
+/* ------------------------------------------ */
 
 
 @media (max-width: 1200px) {
@@ -1271,6 +1389,10 @@ body {
   }
 
   /* ------------------------------------------- */
+
+
+
+
 
   .testimonials__slide {
     padding: 16px 30px 16px 30px;
@@ -1401,6 +1523,16 @@ body {
 
   .swiper-slide-active .testimonials__svg-down {
     right: -6%;
+  }
+
+  .main__testimonials {
+    padding-bottom: 120px;
+  }
+
+  /* --------------------------------------------- */
+
+  .main__content-gallery {
+    margin-bottom: 120px;
   }
 
 }
@@ -1548,6 +1680,20 @@ body {
     height: 15px;
   }
 
+  /* ------------------------------------------------- */
+
+  .process__title {
+    font-size: 35px;
+  }
+
+  .accordions__title {
+    font-size: 25px;
+  }
+
+  .accordions__number {
+    font-size: 38px;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -1663,6 +1809,24 @@ body {
     height: 17px;
   }
 
+  /* ------------------------------------------ */
+
+  .accordions__title {
+    font-size: 23px;
+  }
+
+  .accordions__control {
+    padding: 32px 28px;
+    gap: 20px;
+  }
+
+  .accordions__number {
+    font-size: 39px;
+  }
+
+  .process__title {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1817,6 +1981,58 @@ body {
 
   .testimonialss__text {
     font-size: 18px;
+  }
+
+  /* ---------------------------------------- */
+
+  .accordions__control {
+    padding: 22px 15px;
+    gap: 15px;
+  }
+
+  .accordions__title {
+    font-size: 19px;
+  }
+
+  .accordions__number {
+    font-size: 31px;
+  }
+
+  .accordions__title {
+    padding-right: 0px;
+  }
+
+  .accordions__list {
+    gap: 0.8rem;
+  }
+
+  .process__intro {
+    padding-bottom: 25px;
+  }
+
+  .process__title {
+    font-size: 29px;
+  }
+
+  .process__text {
+    font-size: 18px;
+  }
+
+  .accordions__icon {
+    flex: 0 0 40px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordions__icon::after {
+    width: 20px;
+    height: 3.5px;
+  }
+
+  .accordions__icon::before {
+    width: 20px;
+    height: 3.5px;
   }
 
 }
